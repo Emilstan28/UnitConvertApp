@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Unit Convert</string>
+    <string name="Temperature">Temperature</string>
+    <string name="Weight">Weight</string>
+    <string name="Distance">Distance</string>
+    <string name="ChooseUnitQuery">Choose the unit you\'d like to convert</string>
+    <string name="Celsius">Celsius</string>
+    <string name="Fahrenheit">Fahrenheit</string>
+    <string name="Kelvin">Kelvin</string>
+    <string name="ChooseTypeOfUnit">Select the type of converson to continue</string>
+    <string name="CelsiusConversionQuery">Choose the unit to convert Celsius degrees to</string>
+    <string name="insertNumberConvert" />
+    <string name="insertNumberConversion">Input the number you\'d like to convert</string>
+    <string name="invalidInput">Input a valid number</string>
+</resources>
