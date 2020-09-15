@@ -12,4 +12,5 @@
     <string name="insertNumberConvert" />
     <string name="insertNumberConversion">Input the number you\'d like to convert</string>
     <string name="invalidInput">Input a valid number</string>
+    <string name="FahrenheitConversionQuery">Value:\tChoose the unit to convert Fahrenheit degrees to</string>
 </resources>

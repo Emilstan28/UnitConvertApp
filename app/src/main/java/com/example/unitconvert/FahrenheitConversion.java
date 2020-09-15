@@ -7,35 +7,36 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
-public class CelsiusConversion extends AppCompatActivity {
-    Button celsiusToFahrConvertButton, celsiusToKelvinConvertButton;
+public class FahrenheitConversion extends AppCompatActivity {
+
+    Button FahrenheitToCelsiusConvertButton, FahrenheitToKelvinConvertButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_celsius_conversion);
+        setContentView(R.layout.activity_fahrenheit_conversion);
+        FahrenheitToCelsiusConvertButton = findViewById(R.id.celsiusFahConvertButton);
+        FahrenheitToKelvinConvertButton = findViewById(R.id.kelvinFahConvertButton);
 
-        celsiusToFahrConvertButton = findViewById(R.id.fahrenheitCelConvButton);
-        celsiusToKelvinConvertButton = findViewById(R.id.kelvinCelConvButton);
-
-        celsiusToFahrConvertButton.setOnClickListener(new View.OnClickListener() {
+        FahrenheitToCelsiusConvertButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                celsiusToFahrConvertClicked();
+                fahrToCelsConversion();
             }
         });
 
-        celsiusToKelvinConvertButton.setOnClickListener(new View.OnClickListener() {
+        FahrenheitToKelvinConvertButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                celsiusToKelvinConvertClicked();
+                fahrToKelConversion();
             }
         });
     }
 
-    public void celsiusToFahrConvertClicked() {
-        EditText numberToConvert = findViewById(R.id.numberToConvert);
-        EditText answerHere = findViewById(R.id.answerField);
+
+    public void fahrToCelsConversion() {
+        EditText numberToConvert = findViewById(R.id.numberToConvertFahrDegree);
+        EditText answerHere = findViewById(R.id.answerFieldFahrDegree);
 
         if (numberToConvert.getText().toString().isEmpty() || numberToConvert.getText() == null) {
             answerHere.setText(R.string.invalidInput);
@@ -43,16 +44,16 @@ public class CelsiusConversion extends AppCompatActivity {
             double originalNumber;
             double numbersToConvert = Double.parseDouble(numberToConvert.getText().toString());
             originalNumber = numbersToConvert;
-            numbersToConvert = numbersToConvert / 5 * 9 + 32;
+            numbersToConvert = (numbersToConvert-32) * 5 / 9;
             String twoDecimalDigits = String.format("%.2f", numbersToConvert);
-            String toDisplay = String.format("%s degrees C is equal to %s degrees F.", originalNumber, twoDecimalDigits);
+            String toDisplay = String.format("%s degrees C is equal to %s degrees C.", originalNumber, twoDecimalDigits);
             answerHere.setText(toDisplay);
         }
     }
 
-    public void celsiusToKelvinConvertClicked() {
-        EditText numberToConvert = findViewById(R.id.numberToConvert);
-        EditText answerHere = findViewById(R.id.answerField);
+    public void fahrToKelConversion() {
+        EditText numberToConvert = findViewById(R.id.numberToConvertFahrDegree);
+        EditText answerHere = findViewById(R.id.answerFieldFahrDegree);
 
         if (numberToConvert.getText().toString().isEmpty() || numberToConvert.getText() == null) {
             answerHere.setText(R.string.invalidInput);
@@ -60,7 +61,7 @@ public class CelsiusConversion extends AppCompatActivity {
             double originalNumber;
             double numbersToConvert = Double.parseDouble(numberToConvert.getText().toString());
             originalNumber = numbersToConvert;
-            numbersToConvert = numbersToConvert + 273.15;
+            numbersToConvert = (numbersToConvert-32) * 5 / 9 + 273.15;
             String twoDecimalDigits = String.format("%.2f", numbersToConvert);
             String toDisplay = String.format("%s degrees C is equal to %s degrees K.", originalNumber, twoDecimalDigits);
             answerHere.setText(toDisplay);

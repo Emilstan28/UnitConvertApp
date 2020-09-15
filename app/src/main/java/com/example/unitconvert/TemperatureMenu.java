@@ -25,10 +25,22 @@ public class TemperatureMenu extends AppCompatActivity {
                 toCelsiusView();
             }
         });
+
+        fahrenheitButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                toFahrenheitView();
+            }
+        });
     }
 
     public void toCelsiusView() {
         Intent intent = new Intent(this, CelsiusConversion.class);
+        startActivity(intent);
+    }
+
+    public void toFahrenheitView() {
+        Intent intent = new Intent(this, FahrenheitConversion.class);
         startActivity(intent);
     }
 }
