@@ -35,8 +35,8 @@ public class FahrenheitConversion extends AppCompatActivity {
 
 
     public void fahrToCelsConversion() {
-        EditText numberToConvert = findViewById(R.id.numberToConvertFahrDegree);
-        EditText answerHere = findViewById(R.id.answerFieldFahrDegree);
+        EditText numberToConvert = findViewById(R.id.numberToConvert);
+        EditText answerHere = findViewById(R.id.answerField);
 
         if (numberToConvert.getText().toString().isEmpty() || numberToConvert.getText() == null) {
             answerHere.setText(R.string.invalidInput);
@@ -52,8 +52,8 @@ public class FahrenheitConversion extends AppCompatActivity {
     }
 
     public void fahrToKelConversion() {
-        EditText numberToConvert = findViewById(R.id.numberToConvertFahrDegree);
-        EditText answerHere = findViewById(R.id.answerFieldFahrDegree);
+        EditText numberToConvert = findViewById(R.id.numberToConvert);
+        EditText answerHere = findViewById(R.id.answerField);
 
         if (numberToConvert.getText().toString().isEmpty() || numberToConvert.getText() == null) {
             answerHere.setText(R.string.invalidInput);

@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Unit Convert</string>
     <string name="Temperature">Temperature</string>
-    <string name="Weight">Weight</string>
+    <string name="Weight_Volume">Weight/Volume</string>
     <string name="Distance">Distance</string>
     <string name="ChooseUnitQuery">Choose the unit you\'d like to convert</string>
     <string name="Celsius">Celsius</string>
@@ -15,4 +15,9 @@
     <string name="FahrenheitConversionQuery">Choose the unit to convert Fahrenheit degrees to</string>
     <string name="KelvinConversionQuery">Choose the unit to convert Kelvin degrees to</string>
     <string name="AnswerWillAppearHere">The answer will appear here</string>
+    <string name="Kilogram">kilograms</string>
+    <string name="Pound">pounds</string>
+    <string name="Litre">litres</string>
+    <string name="Gallons">gallons</string>
+    <string name="PressButton">Press the button to convert</string>
 </resources>

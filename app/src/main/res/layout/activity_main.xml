@@ -28,17 +28,17 @@
         android:layout_width="156dp"
         android:layout_height="100dp"
         android:text="@string/Temperature"
-        app:layout_constraintBottom_toTopOf="@+id/weightButton"
+        app:layout_constraintBottom_toTopOf="@+id/weightVolumeButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/weightButton"
+        android:id="@+id/weightVolumeButton"
         android:layout_width="153dp"
         android:layout_height="100dp"
-        android:text="@string/Weight"
+        android:text="@string/Weight_Volume"
         app:layout_constraintBottom_toTopOf="@+id/distanceButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -54,5 +54,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/weightButton" />
+        app:layout_constraintTop_toBottomOf="@+id/weightVolumeButton" />
 </androidx.constraintlayout.widget.ConstraintLayout>

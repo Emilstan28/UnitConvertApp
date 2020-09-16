@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/TemperatureUnitMenu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TemperatureMenu">
+
+    <Button
+        android:id="@+id/kilogramButton"
+        android:layout_width="156dp"
+        android:layout_height="100dp"
+        android:text="@string/Kilogram"
+        app:layout_constraintBottom_toTopOf="@+id/litreButton"
+        app:layout_constraintEnd_toStartOf="@+id/poundButton"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/poundButton"
+        android:layout_width="156dp"
+        android:layout_height="100dp"
+        android:text="@string/Pound"
+        app:layout_constraintBottom_toTopOf="@+id/gallonButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/kilogramButton"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/litreButton"
+        android:layout_width="156dp"
+        android:layout_height="100dp"
+        android:text="@string/Litre"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/gallonButton"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kilogramButton" />
+
+    <Button
+        android:id="@+id/gallonButton"
+        android:layout_width="156dp"
+        android:layout_height="100dp"
+        android:text="@string/Gallons"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/litreButton"
+        app:layout_constraintTop_toBottomOf="@+id/poundButton" />
+
+    <TextView
+        android:id="@+id/ChooseUnitTemp"
+        android:layout_width="156dp"
+        android:layout_height="53dp"
+        android:text="@string/ChooseUnitQuery"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#4C5DB8"
+        android:textSize="16sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/litreButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kilogramButton" />
+</androidx.constraintlayout.widget.ConstraintLayout>

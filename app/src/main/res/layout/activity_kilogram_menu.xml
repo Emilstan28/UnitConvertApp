@@ -7,56 +7,44 @@
     tools:context=".CelsiusConversion">
 
     <Button
-        android:id="@+id/fahrenheitToCelsiusConvertButton"
-        android:layout_width="156dp"
-        android:layout_height="100dp"
-        android:text="@string/Celsius"
-        app:layout_constraintBottom_toTopOf="@+id/answerField"
-        app:layout_constraintEnd_toStartOf="@+id/fahrenheitToKelvinConvertButton"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/chooseUnitFah" />
-
-    <Button
-        android:id="@+id/fahrenheitToKelvinConvertButton"
-        android:layout_width="156dp"
-        android:layout_height="100dp"
-        android:text="@string/Kelvin"
+        android:id="@+id/kilogramToPoundsConvertButton"
+        android:layout_width="358dp"
+        android:layout_height="90dp"
+        android:text="@string/Pound"
         app:layout_constraintBottom_toTopOf="@+id/answerField"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/fahrenheitToCelsiusConvertButton"
-        app:layout_constraintTop_toBottomOf="@+id/chooseUnitFah" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pressButtonToConvert" />
 
     <TextView
-        android:id="@+id/chooseUnitFah"
-        android:autofillHints="none"
+        android:id="@+id/pressButtonToConvert"
         android:layout_width="156dp"
         android:layout_height="53dp"
-        android:text="@string/FahrenheitConversionQuery"
+        android:autofillHints="none"
+        android:text="@string/PressButton"
         android:textAlignment="center"
         android:textAllCaps="false"
         android:textColor="#4C5DB8"
         android:textSize="15sp"
         android:textStyle="bold|italic"
-        app:layout_constraintBottom_toTopOf="@+id/answerField"
+        app:layout_constraintBottom_toTopOf="@+id/kilogramToPoundsConvertButton"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/numberToConvert"
-        app:layout_constraintVertical_bias="0.201" />
+        app:layout_constraintTop_toBottomOf="@+id/numberToConvert" />
 
     <EditText
         android:id="@+id/numberToConvert"
-        android:autofillHints="none"
         android:layout_width="316dp"
         android:layout_height="47dp"
-        android:layout_marginTop="16dp"
+        android:autofillHints="none"
         android:ems="10"
         android:hint="@string/insertNumberConversion"
         android:inputType="numberDecimal"
+        app:layout_constraintBottom_toTopOf="@+id/pressButtonToConvert"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -64,7 +52,6 @@
         android:id="@+id/answerField"
         android:layout_width="411dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="140dp"
         android:autofillHints="none"
         android:ems="10"
         android:enabled="true"
@@ -73,6 +60,7 @@
         android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kilogramToPoundsConvertButton" />
 </androidx.constraintlayout.widget.ConstraintLayout>
