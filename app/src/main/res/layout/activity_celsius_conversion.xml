@@ -7,25 +7,25 @@
     tools:context=".CelsiusConversion">
 
     <Button
-        android:id="@+id/fahrenheitCelConvButton"
+        android:id="@+id/celsiusToFahrConvButton"
         android:layout_width="156dp"
         android:layout_height="100dp"
         android:text="@string/Fahrenheit"
         app:layout_constraintBottom_toTopOf="@+id/answerField"
-        app:layout_constraintEnd_toStartOf="@+id/kelvinCelConvButton"
+        app:layout_constraintEnd_toStartOf="@+id/celsiusToKelvinConvButton"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/chooseUnitConvCel" />
 
     <Button
-        android:id="@+id/kelvinCelConvButton"
+        android:id="@+id/celsiusToKelvinConvButton"
         android:layout_width="156dp"
         android:layout_height="100dp"
         android:text="@string/Kelvin"
         app:layout_constraintBottom_toTopOf="@+id/answerField"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/fahrenheitCelConvButton"
+        app:layout_constraintStart_toEndOf="@+id/celsiusToFahrConvButton"
         app:layout_constraintTop_toBottomOf="@+id/chooseUnitConvCel" />
 
     <TextView

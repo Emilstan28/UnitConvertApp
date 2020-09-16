@@ -32,6 +32,13 @@ public class TemperatureMenu extends AppCompatActivity {
                 toFahrenheitView();
             }
         });
+
+        kelvinButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                toKelvinView();
+            }
+        });
     }
 
     public void toCelsiusView() {
@@ -41,6 +48,11 @@ public class TemperatureMenu extends AppCompatActivity {
 
     public void toFahrenheitView() {
         Intent intent = new Intent(this, FahrenheitConversion.class);
+        startActivity(intent);
+    }
+
+    public void toKelvinView() {
+        Intent intent = new Intent(this, KelvinConversion.class);
         startActivity(intent);
     }
 }

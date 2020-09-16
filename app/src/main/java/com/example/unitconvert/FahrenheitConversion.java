@@ -15,8 +15,8 @@ public class FahrenheitConversion extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fahrenheit_conversion);
-        FahrenheitToCelsiusConvertButton = findViewById(R.id.celsiusFahConvertButton);
-        FahrenheitToKelvinConvertButton = findViewById(R.id.kelvinFahConvertButton);
+        FahrenheitToCelsiusConvertButton = findViewById(R.id.fahrenheitToCelsiusConvertButton);
+        FahrenheitToKelvinConvertButton = findViewById(R.id.fahrenheitToKelvinConvertButton);
 
         FahrenheitToCelsiusConvertButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -46,7 +46,7 @@ public class FahrenheitConversion extends AppCompatActivity {
             originalNumber = numbersToConvert;
             numbersToConvert = (numbersToConvert-32) * 5 / 9;
             String twoDecimalDigits = String.format("%.2f", numbersToConvert);
-            String toDisplay = String.format("%s degrees C is equal to %s degrees C.", originalNumber, twoDecimalDigits);
+            String toDisplay = String.format("%s degrees F is equal to %s degrees C.", originalNumber, twoDecimalDigits);
             answerHere.setText(toDisplay);
         }
     }
@@ -63,7 +63,7 @@ public class FahrenheitConversion extends AppCompatActivity {
             originalNumber = numbersToConvert;
             numbersToConvert = (numbersToConvert-32) * 5 / 9 + 273.15;
             String twoDecimalDigits = String.format("%.2f", numbersToConvert);
-            String toDisplay = String.format("%s degrees C is equal to %s degrees K.", originalNumber, twoDecimalDigits);
+            String toDisplay = String.format("%s degrees F is equal to %s degrees K.", originalNumber, twoDecimalDigits);
             answerHere.setText(toDisplay);
         }
     }
