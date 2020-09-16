@@ -22,6 +22,7 @@
         android:layout_width="156dp"
         android:layout_height="100dp"
         android:text="@string/Celsius"
+        android:textAlignment="center"
         app:layout_constraintBottom_toTopOf="@+id/answerField"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -47,6 +48,7 @@
 
     <EditText
         android:id="@+id/numberToConvert"
+        android:autofillHints="none"
         android:layout_width="316dp"
         android:layout_height="47dp"
         android:layout_marginTop="16dp"
@@ -60,11 +62,13 @@
 
     <EditText
         android:id="@+id/answerField"
+        android:autofillHints="none"
         android:layout_width="411dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="140dp"
         android:ems="10"
         android:enabled="true"
+        android:hint="@string/AnswerWillAppearHere"
         android:inputType="textMultiLine"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

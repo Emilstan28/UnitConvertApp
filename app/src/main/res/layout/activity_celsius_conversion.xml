@@ -30,6 +30,7 @@
 
     <TextView
         android:id="@+id/chooseUnitConvCel"
+        android:autofillHints="none"
         android:layout_width="156dp"
         android:layout_height="53dp"
         android:text="@string/CelsiusConversionQuery"
@@ -47,6 +48,7 @@
 
     <EditText
         android:id="@+id/numberToConvert"
+        android:autofillHints="none"
         android:layout_width="316dp"
         android:layout_height="47dp"
         android:layout_marginTop="16dp"
@@ -63,9 +65,12 @@
         android:layout_width="411dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="140dp"
+        android:autofillHints="none"
         android:ems="10"
         android:enabled="true"
+        android:hint="@string/AnswerWillAppearHere"
         android:inputType="textMultiLine"
+        android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
