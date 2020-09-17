@@ -18,6 +18,6 @@
     <string name="Kilogram">kilograms</string>
     <string name="Pound">pounds</string>
     <string name="Litre">litres</string>
-    <string name="Gallons">gallons</string>
+    <string name="Gallon">gallons</string>
     <string name="PressButton">Press the button to convert</string>
 </resources>

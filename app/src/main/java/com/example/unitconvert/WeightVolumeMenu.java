@@ -26,10 +26,31 @@ public class WeightVolumeMenu extends AppCompatActivity {
                 openKilogramMenu();
             }
         });
+        poundButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openPoundMenu();
+            }
+        });
+        litreButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openLitreMenu();
+            }
+        });
     }
 
     public void openKilogramMenu() {
         Intent intent = new Intent(this, KilogramMenu.class);
+        startActivity(intent);
+    }
+
+    public void openPoundMenu() {
+        Intent intent = new Intent(this, PoundMenuAndConversion.class);
+        startActivity(intent);
+    }
+    public void openLitreMenu() {
+        Intent intent = new Intent(this, LitreMenuAndConversion.class);
         startActivity(intent);
     }
 }
