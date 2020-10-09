@@ -38,6 +38,12 @@ public class WeightVolumeMenu extends AppCompatActivity {
                 openLitreMenu();
             }
         });
+        gallonButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openGallonMenu();
+            }
+        });
     }
 
     public void openKilogramMenu() {
@@ -51,6 +57,10 @@ public class WeightVolumeMenu extends AppCompatActivity {
     }
     public void openLitreMenu() {
         Intent intent = new Intent(this, LitreMenuAndConversion.class);
+        startActivity(intent);
+    }
+    public void openGallonMenu() {
+        Intent intent = new Intent(this, GallonMenuAndConversion.class);
         startActivity(intent);
     }
 }
