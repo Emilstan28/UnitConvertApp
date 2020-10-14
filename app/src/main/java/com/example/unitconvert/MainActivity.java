@@ -8,15 +8,14 @@ import android.view.View;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
-    private Button temperatureButton, weightVolumeButton, distanceButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        temperatureButton = findViewById(R.id.temperatureButton);
-        weightVolumeButton = findViewById(R.id.weightVolumeButton);
-        distanceButton = findViewById(R.id.distanceButton);
+        Button temperatureButton = findViewById(R.id.temperatureButton);
+        Button weightVolumeButton = findViewById(R.id.weightVolumeButton);
+        Button distanceButton = findViewById(R.id.distanceButton);
 
         temperatureButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -31,6 +30,15 @@ public class MainActivity extends AppCompatActivity {
                 openWeightVolumeMenu();
             }
         });
+
+        distanceButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openDistanceMenu();
+            }
+        });
+
+
     }
 
     public void openTemperatureMenu() {
@@ -40,6 +48,11 @@ public class MainActivity extends AppCompatActivity {
 
     public void openWeightVolumeMenu() {
         Intent intent = new Intent(this, WeightVolumeMenu.class);
+        startActivity(intent);
+    }
+
+    public void openDistanceMenu() {
+        Intent intent = new Intent(this, DistanceMenu.class);
         startActivity(intent);
     }
 }

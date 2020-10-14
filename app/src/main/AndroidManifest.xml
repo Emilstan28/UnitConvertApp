@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".GallonMenuAndConversion"/>
+        <activity android:name=".MileConversion"></activity>
+        <activity android:name=".KilometerConversion" />
+        <activity android:name=".DistanceMenu" />
+        <activity android:name=".GallonMenuAndConversion" />
         <activity android:name=".LitreMenuAndConversion" />
         <activity android:name=".PoundMenuAndConversion" />
         <activity android:name=".KilogramMenu" />

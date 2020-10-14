@@ -20,4 +20,7 @@
     <string name="Litre">litres</string>
     <string name="Gallon">gallons</string>
     <string name="PressButton">Press the button to convert</string>
+    <string name="Kilometer">Kilometers</string>
+    <string name="NauticalMile">Nautical Miles</string>
+    <string name="Mile">Miles</string>
 </resources>

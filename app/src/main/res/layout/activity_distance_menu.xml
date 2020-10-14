@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/TemperatureUnitMenu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TemperatureMenu">
+
+    <Button
+        android:id="@+id/kilometreButton"
+        android:layout_width="156dp"
+        android:layout_height="100dp"
+        android:text="@string/Kilometer"
+        app:layout_constraintBottom_toTopOf="@+id/nauticalMileButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/mileButton"
+        android:layout_width="156dp"
+        android:layout_height="100dp"
+        android:text="@string/Mile"
+        app:layout_constraintBottom_toTopOf="@+id/nauticalMileButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kilometreButton" />
+
+    <Button
+        android:id="@+id/nauticalMileButton"
+        android:layout_width="156dp"
+        android:layout_height="100dp"
+        android:text="@string/NauticalMile"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mileButton" />
+
+    <TextView
+        android:id="@+id/ChooseUnitTemp"
+        android:layout_width="156dp"
+        android:layout_height="53dp"
+        android:text="@string/ChooseUnitQuery"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#4C5DB8"
+        android:textSize="16sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/kilometreButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
