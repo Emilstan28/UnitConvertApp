@@ -52,7 +52,7 @@ public class DistanceMenu extends AppCompatActivity {
     }
 
     public void toNauticalMileView() {
-        Intent intent = new Intent(this, KelvinConversion.class);
+        Intent intent = new Intent(this, NauticalMileConversion.class);
         startActivity(intent);
     }
 }
